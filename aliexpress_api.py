@@ -21,7 +21,7 @@ class AliexpressAPI:
         }
 
         try:
-            response = requests.get("https://portals.aliexpress.com/linkgenerate", params=params)
+            response = requests.get("https://portals.aliexpress.com/open/service/link/generate", params=params)
             print("🔍 URL Requested:", response.url)
             print("📦 Response Content:", response.text)
             response.raise_for_status()
